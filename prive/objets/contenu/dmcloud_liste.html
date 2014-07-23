@@ -6,14 +6,16 @@
             <th scope='col'><:dmcloud:item_id:></th>
             <th scope='col'><:dmcloud:item_titre:></th>
             <th scope='col'><:dmcloud:item_auteur:></th>
+            <th scope='col'><:dmcloud:item_creer:></th>
         </tr>
     </thead>
     <tbody>
     <BOUCLE_liste_dmcloud(DATA){source table, #REM|dmcloud_recup_video}>
         <tr class="[(#COMPTEUR_BOUCLE|alterner{row_odd,row_even})]">
-            <td>[(#VALEUR{id})]</td>
-            <td><a href="[(#VALEUR{url})]">[(#VALEUR{title})]</a></td>
-            <td>[(#VALEUR{author})]</td>
+            <td><a href="[(#VALEUR{url})]" title="[(#VALEUR{id})]">#COMPTEUR_BOUCLE</a></td>
+            <td><a href="[(#VALEUR{url})]">[(#VALEUR{titre})]</a></td>
+            <td>[(#VALEUR{auteur})]</td>
+            <td>[(#VALEUR{creer})]</td>
         </tr>
     </BOUCLE_liste_dmcloud>
     </tbody>
