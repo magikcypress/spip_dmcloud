@@ -1,4 +1,4 @@
 spip_dmcloud
 ============
 
-The Dailymotion Cloud API - jouer avec dailymotion cloud
+The Dailymotion Cloud API -jouer avec dailymotion cloud

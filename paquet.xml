@@ -1,0 +1,24 @@
+<paquet
+    prefix="dmcloud"
+    categorie="multimedia"
+    version="1.0.0"
+    etat="dev"
+    compatibilite="[3.0.10;3.0.*]"
+    logo="prive/themes/spip/images/dmcloud-64.png"
+    documentation=""
+    schema="1.0"
+>
+
+    <nom>dmcloud</nom>
+    <!--Ce plugin permet de jouer avec dailymotion cloud-->
+
+    <auteur>vincent</auteur>
+
+    <licence>GNU/GPL</licence>
+
+    <pipeline nom="taches_generales_cron" inclure="dmcloud_pipelines.php" />
+
+    <menu nom="dmcloud_configuration" titre="dmcloud:icone_dmcloud_configuration" parent="menu_configuration" icone="images/dmcloud-16.png" action="configurer_dmcloud" />
+    <menu nom="dmcloud_list" titre="dmcloud:icone_dmcloud_lister" parent="menu_edition" icone="images/dmcloud-16.png" action="liste_dmcloud" />
+    <menu nom="dmcloud_upload" titre="dmcloud:icone_dmcloud_upload" parent="menu_edition" icone="images/dmcloud-16.png" action="upload_dmcloud" />
+</paquet>
